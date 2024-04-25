@@ -1,1 +1,2 @@
 # gravitationalWavesULL
+Here is the code we used for the presentation "Ondas gravitacionales: ondas en el espacio tiempo" in the University of La Laguna on April 2024. The majority of the code can be found here, we added a part to make easier the sound reproduction of the gravitational waves and a directory to facilitate making the signal clearer in all of the papers that have been published of LIGO and the associated collaboration to find gravitacional waves, on all three rounds of observations to date.
