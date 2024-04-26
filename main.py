@@ -44,12 +44,12 @@ large_data_filenames = {'GW150914': 'LOSC_4_V2-1126257414-4096.hdf5'}
 fn_H1 = 'H-H1_' + large_data_filenames['GW150914']
 fn_L1 = 'L-L1_' + large_data_filenames['GW150914']
 
-# this is the approximate event time which is used in the papers
+# tiempo aproximado del suceso
 time_center = 1126259462
 
-# get sample rate from the H1 data file
+
 with h5py.File(fn_H1, 'r') as hdf_file:
-    dt = hdf_file['strain/Strain'].attrs['Xspacing'] #obtiene el período de muestreo de la observación
+    dt = hdf_file['strain/Strain'].attrs['Xspacing'] # obtenemos el período de muestreo del archivo de datos H1
 fs = int(1.0/dt)
 print("Using sample rate of {0} Hz found in file: {1}".format(fs, fn_H1))
 
